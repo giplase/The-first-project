@@ -1,13 +1,25 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from "@angular/core";
+import { RandomNumbers } from "./random-button/random-number.service";
 
+      
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+    selector: "my-app",
+    providers: [RandomNumbers],
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'The-first-project';
+export class AppComponent { 
+    leftnum: number = 10;
+    rightnum: number[] = [0, 10, 0, 0];
+
+    
+    constructor(private randomNum1: RandomNumbers){}
+       
+    randomNum(){
+        this.leftnum = this.randomNum1.generateRandomNumbers();
+        this.rightnum[0] = this.randomNum1.generateRandomNumbers();
+        this.rightnum[1] = this.randomNum1.generateRandomNumbers();
+        this.rightnum[2] = this.randomNum1.generateRandomNumbers();
+        this.rightnum[3] = this.randomNum1.generateRandomNumbers();
+    }
 }
