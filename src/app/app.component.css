@@ -1,7 +1,6 @@
 .common-component {
     display: flex;
-    width: 100vw;
-    height: 22vw;
+    width: 100%;
 }
 
 .right-components {
