@@ -1,0 +1,8 @@
+<div class="common-component">
+    <left-comp [leftnum]="leftnum"></left-comp>
+    <div class="right-components">
+        <div *ngFor="let item of items">
+            <right-comp [item]="item"></right-comp>
+        </div>        
+    </div>
+</div>

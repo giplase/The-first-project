@@ -6,6 +6,5 @@ import { Component, Input } from "@angular/core";
     styleUrls: ['./left.component.css']
 })
 export class LeftComponent {
-    @Input() leftnum: number = 0;
-
+    @Input() leftnum!: number;
 }

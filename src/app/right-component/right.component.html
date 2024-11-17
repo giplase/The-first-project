@@ -1,4 +1,6 @@
-<div>
-    <input class="name" [(ngModel)]="name">
-    <input type="number" class="number" [(ngModel)]="rightnum">
-</div>
+<a [routerLink]="['/item', item.id]">
+    <div>
+        <span class="name">{{ item.name }}</span>
+        <span class="number">{{ item.id }}</span>
+    </div>
+</a>

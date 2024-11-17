@@ -1,11 +1,5 @@
-<div class="common-component">
-    <left-comp [leftnum] = "leftnum"></left-comp>
-    <div class="right-components">
-        <right-comp [name] = "'Черновик'" [rightnum] = "rightnum[0]"></right-comp>
-        <right-comp [name] = "'В обработке'" [rightnum] = "rightnum[1]"></right-comp>
-        <right-comp [name] = "'Завершено'" [rightnum] = "rightnum[2]"></right-comp>
-        <right-comp [name] = "'Аннулировано'" [rightnum] = "rightnum[3]"></right-comp>
-        <button class="random-button" (click)="randomNum()">Сгенерировать</button>
-    </div>
-</div>
-
+<nav>
+    <a routerLink="/">Главная</a>
+</nav>
+    
+<router-outlet></router-outlet>

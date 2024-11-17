@@ -1,36 +1,20 @@
 div {
-    display: flex;
     background-color: RGB(249,250,252);
-    padding: 12px 15px 12px 35px;
+    padding: 12px 20px 12px 35px;
     border-radius: 20px;
+    font-weight: 600;
 }
 .name {
-    outline: none;
-    border: none;
     font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    background-color: RGB(249,250,252);
 }
 .number {
-    text-align: right;
-    margin-left: auto;
-    outline: none;
-    border: none;
+    float: right;
     font-size: 1.5rem;
     font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 600;
     color: RGB(4,103,181);
-    background-color: RGB(249,250,252);
 }
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-input[type="number"] {
-    appearance: none;
-    -moz-appearance: textfield;
+a {
+    text-decoration: none;
+    color: inherit;
 }

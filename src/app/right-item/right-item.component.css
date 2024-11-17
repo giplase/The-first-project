@@ -1,0 +1,19 @@
+div {
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.item {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    background-color: RGB(249,250,252);
+    border-radius: 20px;
+}
+span {
+    padding: 20px;
+    color: 	RGB(4,103,181);
+}
