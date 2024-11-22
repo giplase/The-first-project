@@ -1,0 +1,66 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+p {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.filter-comp {
+    padding: 20px;
+}
+
+button {
+    background-color: RGB(249,250,252);
+    border: none;
+    border-radius: 20px;
+    width: 280px;
+    height: 50px;
+    cursor: pointer;
+    padding: 15px 32px;
+}
+
+.filter-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.name-filter {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+input[type="date"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 250px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+input[type="radio"]:checked + label {
+    background-color: RGB(4,103,181);
+    color: white;
+}
+
+label:hover {
+    background-color: RGB(249,250,252);
+}
+

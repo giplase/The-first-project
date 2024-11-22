@@ -1,0 +1,25 @@
+<div class="filter-comp">
+    <p>Фильтрация</p>
+
+    <div class="filter-options">
+        <button (click)="dateInputVisibility()">По дате</button>
+        <input *ngIf="dateFilter" type="date" [(ngModel)]="dateFilterValue">
+
+        <button (click)="nameInputVisibility()">По имени</button>
+        <div *ngIf="nameFilter" class="name-filter">
+            <div *ngFor="let item of items">
+                <input
+                    type="radio"
+                    id="{{item.name}}"
+                    name="item"
+                    [value]="item.name"
+                    [(ngModel)]="selectedItemName"
+                    (change)="onSelectedItem(item.name)"
+                />
+                <label for="{{item.name}}">{{ item.name }}</label>
+            </div>
+        </div>
+    </div>
+    <button (click)="applyFilter()">Фильтровать</button>
+</div>
+

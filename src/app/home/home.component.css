@@ -1,3 +1,10 @@
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 20px;
+}
+
 .common-component {
     display: flex;
     width: 100%;
@@ -24,4 +31,17 @@
     margin-top: 2vw;
     cursor: pointer;
     width: 40%;
+}
+
+ul {
+    margin: 0 0 20px 0;
+    padding: 0 0 0 25px;
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
 }

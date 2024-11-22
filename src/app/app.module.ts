@@ -7,6 +7,7 @@ import { RightComponent } from "./right-component/right.component";
 import { RightItem } from "./right-item/right-item.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { HomeComponent } from "./home/home.component";
+import { FilterComponent } from "./filter/filter.component";
 
  
 @NgModule({
@@ -18,7 +19,8 @@ import { HomeComponent } from "./home/home.component";
                     LeftComponent,
                     RightComponent,
                     RightItem,
-                    HomeComponent ],
+                    HomeComponent,
+                    FilterComponent ],
 
     providers: [],
     

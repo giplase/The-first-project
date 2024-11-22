@@ -6,3 +6,8 @@
         </div>        
     </div>
 </div>
+<filter-comp></filter-comp>
+<p>Результат фильтрации</p>
+<ul>
+    <li *ngFor="let item of filteredItems">{{ item.name }}  {{ item.date }}</li>
+</ul>
