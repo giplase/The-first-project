@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Item } from '../models/right-comp.model';
-import { ITEMS } from './items.mock';
+import { Items } from './items.mock';
 
 @Injectable({
     providedIn: 'root',
 })
 export class DataService {
-    items: Item[] = ITEMS;
+    items: Item[] = Items;
     getItems(): Item[] {
         return this.items;
     }

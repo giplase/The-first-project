@@ -1,4 +1,4 @@
-import { Injectable } from "@angular/core";
+import { Injectable, computed, signal } from "@angular/core";
 import { BehaviorSubject } from "rxjs";
 
 
@@ -7,8 +7,11 @@ import { BehaviorSubject } from "rxjs";
 })
 
 export class FilterService {
-    private filterSubject = new BehaviorSubject<any[]>([]);
+    filterSubject = new BehaviorSubject<any[]>([]);
     filterData: any[] = [];
+    filterDataSignal = signal<any[]>([]);
+
+    filteredCount = computed(() => this.filterDataSignal().length);
 
     constructor() {}
 
@@ -32,10 +35,6 @@ export class FilterService {
         });
 
         this.filterSubject.next(filtered);
+        this.filterDataSignal.set(filtered);
     }
-
-    getFilteredData() {
-        return this.filterSubject.asObservable();
-    }
-
 }

@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 import { FilterService } from "./filter.service";
 import { Item } from '../models/right-comp.model';
-import { ITEMS } from "../data/items.mock";
+import { Items } from "../data/items.mock";
 
 
 @Component({
@@ -12,7 +12,7 @@ import { ITEMS } from "../data/items.mock";
 
 export class FilterComponent{
     dateFilterValue: string | undefined = undefined;
-    items: Item[] = ITEMS;
+    items: Item[] = Items;
     dateFilter = false;
     nameFilter = false;
     selectedItemName: string | undefined = undefined;
